@@ -1,6 +1,6 @@
 {
   "name": "vite-reactjs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Your package description",
   "main": "index.js",
   "bin": {

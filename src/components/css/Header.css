@@ -1,0 +1,19 @@
+/* src/css/Header.css */
+
+.webdev-svg {
+  /* to change the color visit go to the webdev.svg file and change the fill */
+  animation: spin 5s linear infinite;
+  /* Add a spin animation */
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+    /* Start with 0 degrees rotation on the Y-axis */
+  }
+
+  to {
+    transform: rotateY(-360deg);
+    /* Rotate counterclockwise to -360 degrees on the Y-axis */
+  }
+}

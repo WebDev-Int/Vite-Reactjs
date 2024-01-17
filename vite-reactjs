@@ -1,17 +1,17 @@
 #!/usr/bin/env node
 /* eslint-disable */
-const fs = require('fs-extra');
+const fsExtra = require('fs-extra');
 const { execSync } = require('child_process');
 
 function generateViteReactApp(appName) {
   const appPath = `./${appName}`;
 
   // Create the app directory
-  fs.ensureDirSync(appPath);
+  fsExtra.ensureDirSync(appPath);
 
   // Copy your custom template structure
   const templatePath = './custom-template';
-  fs.copySync(templatePath, appPath);
+  fsExtra.copySync(templatePath, appPath);
 
   // Run the Vite create command
   execSync(`npx create-vite ${appName} --template react`, { stdio: 'inherit' });
